@@ -15,13 +15,8 @@ const iconMap = {
 };
 
 export default async function CardWrapper() {
-  console.log('Fetching revenue data...');
-  await new Promise((resolve) => setTimeout(resolve, 3000));
-
-
-
-
-
+  // console.log('Fetching revenue data...');
+  // await new Promise((resolve) => setTimeout(resolve, 3000))
 
   const {
     numberOfInvoices,
@@ -29,7 +24,7 @@ export default async function CardWrapper() {
     totalPaidInvoices,
     totalPendingInvoices,
   } = await fetchCardData();
-  console.log('Data fetch completed after 3 seconds.');
+  // console.log('Data fetch completed after 3 seconds.');
   return (
     <>
       {/* NOTE: comment in this code when you get to this point in the course */}
